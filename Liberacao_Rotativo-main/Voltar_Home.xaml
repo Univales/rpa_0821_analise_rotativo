@@ -1,0 +1,142 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="teste" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="803,1320" sap2010:WorkflowViewState.IdRef="teste_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="21">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="19">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="teste" sap:VirtualizedContainerService.HintSize="813,1255" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Boolean" Name="tela_home" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <While sap:VirtualizedContainerService.HintSize="771,1163" sap2010:WorkflowViewState.IdRef="While_2" Condition="[tela_home = False]">
+      <Sequence sap:VirtualizedContainerService.HintSize="725,1005" sap2010:WorkflowViewState.IdRef="Sequence_8">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="x:Int32" Name="cont" />
+        </Sequence.Variables>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Assign sap:VirtualizedContainerService.HintSize="683,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:Int32">[cont]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:Int32">0</InArgument>
+          </Assign.Value>
+        </Assign>
+        <ui:ImageFound DisplayName="Image Exists 'cmd.exe  C:\WINDOWS\sys...'" Found="[tela_home]" sap:VirtualizedContainerService.HintSize="683,106" sap2010:WorkflowViewState.IdRef="ImageFound_3">
+          <ui:ImageFound.Image>
+            <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+          </ui:ImageFound.Image>
+          <ui:ImageFound.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="aa3e7390-7840-4b2d-8236-d2959af14528" Selector="&lt;wnd app='cmd.exe' cls='ConsoleWindowClass' title='C:\WINDOWS\system32\cmd.exe' /&gt;" TimeoutMS="1500">
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:ImageFound.Target>
+        </ui:ImageFound>
+        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="683,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Voltando Home&quot;]" />
+        <If Condition="[tela_home And cont &lt;10]" sap:VirtualizedContainerService.HintSize="683,536" sap2010:WorkflowViewState.IdRef="If_3">
+          <If.Then>
+            <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Boolean">[tela_home]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+              </Assign.Value>
+            </Assign>
+          </If.Then>
+          <If.Else>
+            <Sequence sap:VirtualizedContainerService.HintSize="376,388" sap2010:WorkflowViewState.IdRef="Sequence_10">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" AlterIfDisabled="True" DisplayName="Type Into" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="TypeInto_3" Text="%[k(esc)]">
+                <ui:TypeInto.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="844a447d-189b-48b0-a00e-5ad401e5065d">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:TypeInto.Target>
+              </ui:TypeInto>
+              <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Boolean">[tela_home]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_7">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Int32">[cont]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Int32">[cont + 1]</InArgument>
+                </Assign.Value>
+              </Assign>
+            </Sequence>
+          </If.Else>
+        </If>
+      </Sequence>
+    </While>
+  </Sequence>
+</Activity>
